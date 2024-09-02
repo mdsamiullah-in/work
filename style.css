@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+#MainBox {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 3px 0 rgb(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav h2 {
+  font-family: Calibri;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+#logo span {
+  font-size: 1.8rem;
+  color: orangered;
+}
+
+/* Sidebar Styles */
+#SideBar {
+  width: 250px;
+  height: calc(100% - 60px);
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 2px 0 rgb(0, 0, 0, 0.1);
+}
+
+#SideBarContents {
+  display: flex;
+  gap: 65px;
+  flex-direction: column;
+  padding: 30px 15px;
+}
+
+#NavigationContents1, #NavigationContents2 {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+#NavigationContents1 h3, #NavigationContents2 h3 {
+  color: orangered;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#NavigationContents1 ul, #NavigationContents2 ul {
+  display: flex;
+  gap: 14px;
+  padding-left: 8px;
+  flex-direction: column;
+}
+
+#NavigationContents1 ul li, #NavigationContents2 ul li {
+  display: flex;
+  gap: 6px;
+  list-style-type: none;
+  font-family: Calibri;
+  font-size: 0.9rem;
+}
+
+#NavigationContents1 ul li span {
+  position: relative;
+}
+
+#NavigationContents1 i, #NavigationContents2 i {
+  color: #717171;
+  font-size: 1.2rem;
+}
+
+/* Cut Icon */
+#cutSidebar {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none; /* Hide by default */
+}
+
+
+
+
+#homepage{
+  width: calc(100% - 250px);
+  background-color: red;
+  margin-left: 250px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  #homepage{
+    width: 100%;
+    margin-left: 0;
+  }
+   
+
+  #SideBar {
+      transform: translateX(-100%);
+  }
+
+  #SideBar.open {
+      transform: translateX(0);
+  }
+
+  header {
+      width: 100%;
+      padding: 20px;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+
+  header #toggleSidebar {
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+  }
+
+  nav ul li {
+      display: none;
+  }
+
+  #cutSidebar {
+      display: block; /* Show only in mobile view */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header {
+      display: none;
+  }
+
+  nav ul li {
+      display: block;
+  }
+}
