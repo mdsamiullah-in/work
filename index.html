@@ -1,92 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracker</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
 
-<div id="container">
-
-    <div id="MainBox">
-
-    <!-- Navbar Start-->
-        <nav>
-            <div id="logo">
-                <h2>Gate4Tech</h2>
-            </div>
-
-            <ul>
-                <li><i class="ri-shield-user-line"></i></li>
-            </ul>
-        </nav>
-    <!--Navbar End-->
+  <div class="container">
 
 
 
+   <!--Navbar Start-->
+    <nav id="nav">
 
-    <!-- Header for Mobile View Only -->
-        <header>
-            <div id="toggleSidebar">
-                <i class="ri-menu-line"></i>
-            </div>
-        </header>
-    <!-- Header for Mobile View Only End-->
+      <div id="logo">
+        <div id="menu-toggle"><i class="ri-bar-chart-horizontal-line"></i></div>
+        <h2>Gate<span>4</span>Tech</h2>
+      </div>
 
+      <ul>
+        <li><i class="ri-user-line"></i></li>
+      </ul>
 
-
-
-    <!-- Sidebar -->
-        <div id="SideBar">
- 
-          <div id="SideBarLogo">
-          </div>
+    </nav>
+   <!--Navbar End-->
 
 
-            <!-- Cut Icon (Visible only in mobile view) -->
-            <div id="cutSidebar">
-                <i class="ri-close-line"></i>
-            </div>
 
-            <div id="SideBarContents">
-
-                <div id="NavigationContents1">
-                    <h3 id="QuickAction">Quick Action</h3>
-                    <ul>
-                        <li><i class="ri-home-7-fill"></i><span>Log Weight</span></li>
-                        <li><i class="ri-checkbox-circle-line"></i><span>Add Exercise</span></li>
-                        <li><i class="ri-notification-2-fill"></i><span>New Workout</span></li>
-                    </ul>
-                </div>
-
-                <div id="NavigationContents2">
-                    <h3>Navigation</h3>
-                    <ul>
-                        <li><i class="ri-calendar-todo-fill" id="calenderPage"></i><span>Upcoming</span></li>
-                        <li><i class="ri-progress-4-line" id="progress"></i><span>Upcoming</span></li>
-                        <li><i class="ri-edit-box-line" id="editBox"></i><span>Weekly Plan</span></li>
-                        <li><i class="ri-arrow-right-line" id="arrowRight"></i><span>Exercise</span></li>
-                        <li><i class="ri-user-3-fill" id="user"></i><span>Weight Tracker</span></li>
-                        <li><i class="ri-shapes-fill" id="shapes"></i><span>Equipments</span></li>
-                        <li><i class="ri-time-line" id="time"></i><span>Workout Log</span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    <!--Sidebar End-->
-
-
-    <div id="homepage">
-         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt non, voluptatem beatae dolores qui eaque asperiores unde commodi nulla nobis.</h2>
+    <!-- Sidebar Start -->
+    <div id="sidebar">
+      <div class="sidebar-content">
+        <ul>
+          <li class="section-title">Menu</li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x02190;</span><span class="text">Dashboard</span></a></li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F4AC;</span><span class="text">Messages</span></a></li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F514;</span><span class="text">Notifications</span><span class="badge badge-red">1.2k</span></a></li>
+          <li class="section-title">Tasks</li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F4CB;</span><span class="text">Available Tasks</span></a></li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F4C6;</span><span class="text">Weekly Tasks</span><span class="badge badge-green">15</span></a></li>
+          <li class="section-title">Settings</li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F464;</span><span class="text">Profile</span></a></li>
+          <li><a href="#" class="menu-item"><span class="icon">&#x1F4E6;</span><span class="text">Settings</span></a></li>
+        </ul>
+      </div>
     </div>
+    <!-- Sidebar End -->
 
-    </div>
-</div>
+
+
+
+  </div>
 
 
 <script src="script.js"></script>
