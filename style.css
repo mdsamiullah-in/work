@@ -60,7 +60,7 @@ nav #logo {
 
 #sidebar {
   width: 250px;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 60.5px);
   background-color: #fbfbfb;
   border-top: 1px solid #e5e7eb;
   border-right: 1px solid #e5e7eb;
