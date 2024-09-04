@@ -4,57 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+
+    <div id="container">
+       
+         <div id="mainBox">
+          
+          <!--Sidebar Start-->
+          <div id="sidebar">   
+
+             <div id="sidebarBox">
+
+            <!-- <div id="sidebarLogo">
+                 <h2>Gate4Tech</h2>
+            </div> -->
 
 
+            <div id="sidebarLink">
 
-   <!--Navbar Start-->
-    <nav id="nav">
+              <ul>
+                <label>Main Menu</label>
+                <li><i class="ri-home-4-line"></i><span>Home</span></li>
+                <li><i class="ri-dashboard-line"></i><span>Dashboard</span></li>
+                <li><i class="ri-group-line"></i><span>Groups</span></li>
 
-      <div id="logo">
-        <div id="menu-toggle"><i class="ri-bar-chart-horizontal-line"></i></div>
-        <h2>Gate<span>4</span>Tech</h2>
-      </div>
-
-      <ul>
-        <li><i class="ri-user-line"></i></li>
-      </ul>
-
-    </nav>
-   <!--Navbar End-->
+             </ul>
 
 
+           
+             <ul>
+              <label>General</label>
+              <li><i class="ri-calendar-todo-fill"></i><span>Daily Tasks</span></li>
+              <li><i class="ri-list-check-2"></i><span>Weekly Tasks</span></li>
+              <li><i class="ri-message-line"></i><span>Messages</span></li>
+              <li><i class="ri-notification-3-line"></i><span>Notifications</span></li>
+           </ul>
 
-    <!-- Sidebar Start -->
-    <div id="sidebar">
-      <div class="sidebar-content">
-        <ul>
-          <li class="section-title">Menu</li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x02190;</span><span class="text">Dashboard</span></a></li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F4AC;</span><span class="text">Messages</span></a></li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F514;</span><span class="text">Notifications</span><span class="badge badge-red">1.2k</span></a></li>
-          <li class="section-title">Tasks</li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F4CB;</span><span class="text">Available Tasks</span></a></li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F4C6;</span><span class="text">Weekly Tasks</span><span class="badge badge-green">15</span></a></li>
-          <li class="section-title">Settings</li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F464;</span><span class="text">Profile</span></a></li>
-          <li><a href="#" class="menu-item"><span class="icon">&#x1F4E6;</span><span class="text">Settings</span></a></li>
-        </ul>
-      </div>
+
+           <ul>
+            <label>Account</label>
+            <li><i class="ri-moon-line"></i><span>Dark Mode</span></li>
+            <li><i class="ri-settings-4-line"></i><span>Settings</span></li>
+            <li><i class="ri-logout-circle-r-line"></i><span>Logout</span></li>
+          
+         </ul>
+
+          
+            </div>
+
+
+          </div>
+
+          </div>
+         <!--Sidebar End-->
+
+
+          <div id="homePage">
+ 
+            <div id="homeMainContent">
+
+              <nav>
+
+                  <div id="searchBox">
+                    <button id="search"><i class="ri-search-line"></i></button>
+                    <input type="input" placeholder="Search your Task"/>
+                    <button id="mic"><i class="ri-mic-fill"></i></button>
+                </div>
+
+
+              </nav>
+
+              <header>
+                  
+                 <div id="headerBox">
+
+                  <div id="textContent">
+                    <h2>Welcome to the Task Generator</h2>
+                    <p>Lorem ipsum dolor sit nisi facere fuga suscipit iste Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore hic, incidunt soluta non animi veniam. Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  
+                   <img src="book.png" width="150px">
+                  </div>
+
+              </header>
+
+
+              <section></section>
+            </div>
+
+            <div id="homeMainSidebar">
+ 
+              <div id="topSidebar"></div>
+              <div id="bottomSidebar"></div>
+
+            </div>
+
+
+          </div>        
+ 
+
+         </div>
+
+
     </div>
-    <!-- Sidebar End -->
-
-
-
-
-  </div>
-
-
-<script src="script.js"></script>
+  
 </body>
 </html>
